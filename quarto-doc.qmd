@@ -1,0 +1,148 @@
+---
+title: "LS 빅데이터 스쿨 3일차"
+author: "장일준"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{python}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{python}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+
+# 제목 1
+## 제목 2
+### 제목 3
+#### 제목 4
+
+#### 굵은 텍스트트
+그냥 텍스트
+
+**굵은 텍스트**
+
+__굵은 텍스트__
+
+
+### 기울은 텍스트트
+*이탤릭 텍스트*
+
+_기울임 텍스트_
+
+### 취소선 텍스트
+~~취소선 텍스트~~
+
+### 순서가 있는 리스트
+1. 항목
+2. 항목
+3. 항목
+
+`이렇게도 쓸 수 있다.`
+1. 하옴ㄱ
+1. 항목
+1. 항목
+1. 항목목
+
+### 순서가 없는 리스트
+- 항목
+- 항모옥
+- 항목고곡
+
+### 링크
+[네이버](www.naver.com)
+
+### 이미지
+![]()
+![슈퍼커브 이쁘죠잉?](https://www.hondakorea.co.kr/lib/img/motorcycle/special/supercub_2024/sp_img10.jpg)
+![내 이미지지](./img/img1.jpg)
+
+### 인용구
+> 왔노라, 보았노라, 이겼노라
+
+\- 사랑해요~
+
+그냥텍스트랑 비교
+
+### 코드
+인라인 코드: `print("기억해줘!")`
+
+코드블록: Ctrl + Alt + I
+```{python}
+print("가지마 가지마 가지마~~")
+```
+
+### 수평선
+---
+***
+___
+
+### 각주
+이것은 간단한 각주[^1]입니다.
+
+[^1]: 이것은 참조된 텍스트입니다.
+
+### 문장 안 각주 넣기
+인라인 각주도 사용할 수 있습니다. ^[이것은 인라인 각주입니다.]
+
+## 수식 입력 방법
+- 인라인 수식: $ 하나로 감싸준다. (본문에 입력력)
+- 디스플레이 입력 방법법: $ 두개로 감싸준다. (독립적인 문단)
+- 자세한 명령어들은 나눠주신 교재 참고하자!
+
+문장안에 숫자 $5^2$를 넣어보자.
+
+$$
+x^2 + y^2 = 5 \sqrt{2}
+$$
+
+
+
+### 파이썬 코드 청크
+단축키: Ctrl + Alt + I
+
+### 코드 청크 종류
+2가지 종류가 있음
+1. 인라인 코드 청크: 백틱(``) 하나로 묶음
+  => `인라인 코드 청크`
+1. 디스플레이 코드 청크: 백틱 세 개로 묶음음
+  => ```디스플레이```
+
+### 실행 가능한 코드 청크
+백틱 뒤에 `{python} `을 붙여주면 됨
+```{python}
+
+```
+
+
+## 코드 청크 실행 옵션
+옵션은 `#|` 시작함.
+
+- `echo` 옵션: 코드를 문서에 보여줌
+- `evar` 옵션: 코드를 돌릴 것인가, 그냥 둘 것인가를 결정정
+```{python}
+#| echo: fenced
+#| eval: false
+1+1
+```
+
+### 체크박스
+- [ ] 화분 물 주기
+- [x] ~~화분 물 주기~~
