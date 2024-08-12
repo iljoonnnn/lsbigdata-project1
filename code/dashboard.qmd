@@ -1,0 +1,60 @@
+---
+title: "팔머펭귄 대쉬보드"
+author: "장일준"
+format:
+    dashboard:
+        logo: "../img/펭귄.jpg"
+        nav-buttons:
+            icon: github
+            href: https://www.naver.com/
+        # scrolling: True
+
+---
+
+# Page 1
+
+## {.sidebar}
+
+여기는 사이드바에 대한 내용이 들어갈 곳입니다.
+
+## 칼럼
+
+### Row {height=60%}
+
+```{python}
+
+import pandas as pd
+import numpy as np
+import plotly.express as px
+from palmerpenguins import load_penguins
+
+penguins = load_penguins()
+# penguins.head()
+
+fig = px.scatter(
+    penguins,
+    x = "bill_length_mm",
+    y = "bill_depth_mm",
+    color = "species",
+) # 저번에 했던 코드
+
+fig.show()
+```
+
+### Row {height=40%}
+
+### 테스트1 {.tabset}
+
+```{python}
+from itables import show
+show(penguins)
+```
+
+::: {.card title = "My Title"}
+
+카드 안에 들어있는 텍스트 입니디ㅏ.
+
+:::
+
+# Page 2
+여기는 페이지 2
